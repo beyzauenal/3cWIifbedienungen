@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class IfBedingungen2  {
+public class IfBedingungen2done {
     public static void main(String[] args) {
         // Zufallszahlen erstellen zwischen 0-100
         Random random = new Random();

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class IfBedingungen3 {
+public class IfBedingungen3done {
 
     public static void main(String[] args) {
         //zwei Zufallszahlen zwischen 0 und 100
