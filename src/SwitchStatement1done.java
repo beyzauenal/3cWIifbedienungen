@@ -1,7 +1,9 @@
-public class SwitchStatement1progress {
+import java.util.Random; // Import der Random-Klasse
+
+public class SwitchStatement1done {
     public static void main(String[] args) {
         // Erstelle eine Zufallszahl zwischen 5 und 10
-        Random random = new Random();
+        Random random = new Random(); // Erzeuge ein Random-Objekt
         int randomNumber = 5 + random.nextInt(6); // Zufallszahl zwischen 5 und 10
 
         // Gib die Zahl in Worten aus mit switch
@@ -29,4 +31,3 @@ public class SwitchStatement1progress {
         }
     }
 }
-
