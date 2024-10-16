@@ -29,35 +29,5 @@ public class BankomatBeispiel1progress {
                     }
                     break;
                 case 2:
-                    // Abhebung durchführen
-                    System.out.print("Geben Sie den Betrag ein, den Sie abheben möchten: ");
-                    double abhebung = scanner.nextDouble();
-                    if (abhebung > 0 && abhebung <= kontostand) {
-                        kontostand -= abhebung;
-                        System.out.println(abhebung + " € wurden abgehoben.");
-                    } else if (abhebung > kontostand) {
-                        System.out.println("Unzureichender Kontostand.");
-                    } else {
-                        System.out.println("Ungültiger Betrag.");
-                    }
-                    break;
-                case 3:
-                    // Kontostand anzeigen
-                    System.out.println("Ihr aktueller Kontostand ist: " + kontostand + " €");
-                    break;
-                case 4:
-                    // Programm beenden
-                    System.out.println("Vielen Dank für die Nutzung des Bankomaten. Auf Wiedersehen!");
-                    beenden = true;
-                    break;
-                default:
-                    System.out.println("Ungültige Auswahl. Bitte wählen Sie eine gültige Option.");
-                    break;
-            }
-        }
-
-        // Scanner schließen, um Ressourcen freizugeben
-        scanner.close();
-    }
-}
+          
 
