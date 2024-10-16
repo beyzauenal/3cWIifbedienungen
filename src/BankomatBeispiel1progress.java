@@ -1,10 +1,10 @@
 public class BankomatBeispiel1progress {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Scanner für Benutzereingaben
-        double kontostand = 0; // Initialer Kontostand
-        boolean beenden = false; // Flag, um das Programm zu beenden
+        Scanner scanner = new Scanner(System.in);
+        double kontostand = 0;
+        boolean beenden = false;
 
-        // Menü wird in einer Schleife wiederholt, bis der Benutzer das Programm beendet
+
         while (!beenden) {
             // Menüoptionen anzeigen
             System.out.println("Willkommen beim Bankomat! Wählen Sie eine Option:");
