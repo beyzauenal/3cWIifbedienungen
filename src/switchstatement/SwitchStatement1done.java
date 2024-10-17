@@ -1,3 +1,5 @@
+package switchstatement;
+
 import java.util.Random; // Import der Random-Klasse
 
 public class SwitchStatement1done {

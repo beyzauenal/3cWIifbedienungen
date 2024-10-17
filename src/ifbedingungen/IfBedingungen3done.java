@@ -1,3 +1,5 @@
+package ifbedingungen;
+
 import java.util.Random;
 
 public class IfBedingungen3done {
