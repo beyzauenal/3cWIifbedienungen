@@ -1,4 +1,4 @@
-package ifbedingungen;
+package at.beyza.projects.basics.ifbedingungen;
 
 import java.util.Random;
 
