@@ -1,3 +1,5 @@
+package at.beyza.projects.basics;
+
 import java.util.Scanner;
 public class bankomatdone {
     public static void main(String[] args) {
