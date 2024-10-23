@@ -1,4 +1,4 @@
-package whileloop;
+package at.beyza.projects.basics.whileloop;
 
 import java.util.Random;
 
