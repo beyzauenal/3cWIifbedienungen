@@ -16,7 +16,7 @@ public class arraysdone {
         playGround[0][0] = 1;
         playGround[2][1] = 2;
 
-        System.out.println("-------------");
+        System.out.println(" ");
         for (int row = 0; row < playGround.length; row++) {
             for (int col = 0; col < playGround.length; col++) {
                 System.out.print(playGround[row][col] + " ");
