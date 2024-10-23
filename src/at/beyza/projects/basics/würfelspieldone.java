@@ -1,3 +1,5 @@
+package at.beyza.projects.basics;
+
 import java.util.Random;
 import java.util.Scanner;
 
