@@ -1,4 +1,4 @@
-package loops;
+package at.beyza.projects.basics.loops;
 
 public class loopAufgabe1done {
     public static void main(String[] args) {
