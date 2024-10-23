@@ -1,4 +1,4 @@
-package switchstatement;
+package at.beyza.projects.basics.switchstatement;
 
 import java.util.Random; // Import der Random-Klasse
 
