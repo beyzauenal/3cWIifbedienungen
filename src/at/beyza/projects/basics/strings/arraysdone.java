@@ -1,4 +1,4 @@
-package strings;
+package at.beyza.projects.basics.strings;
 
 public class arraysdone {
     public static void main(String[] args) {
@@ -21,6 +21,7 @@ public class arraysdone {
             for (int col = 0; col < playGround.length; col++) {
                 System.out.print(playGround[row][col] + " ");
             }
+
             System.out.println();
         }
     }
