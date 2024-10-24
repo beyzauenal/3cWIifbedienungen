@@ -1,4 +1,4 @@
-package strings;
+package at.beyza.projects.basics.strings;
 
 public class StringHelperdone {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class StringHelperdone {
             System.out.println(amount);
 
             String reversed = reverseString("hello");
+            System.out.println(reversed);
 
             int amountOfLetters = getAmountOfLetters("sepp");
             System.out.println(amountOfLetters);
@@ -18,18 +19,30 @@ public class StringHelperdone {
     }
 
     public static boolean isPalindrome(String word) {
-        return true;
+        String reversed = reverseString(word);
+        return word.equals(reversed);  // Prüft, ob das Wort rückwärts gleich dem Original ist
     }
 
     public static int countLetters(String word, char c) {
-        return 7;
+        int count = 0;
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == c) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public static String reverseString(String word) {
-        return "dlrow";
+        String reversed = "";
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed += word.charAt(i);
+        }
+        return reversed;
     }
 
     public static int getAmountOfLetters(String word) {
-        return 5;
+        return word.length();  // Gibt die Anzahl der Buchstaben im Wort zurück
     }
 }
+
