@@ -3,7 +3,7 @@ package at.beyza.projects.basics.strings;
 import java.util.Random;
 import java.util.Scanner;
 
-public class WoerterratenProcess {
+public class Wörterraten {
     public static void main(String[] args) {
 
         String[] woerter = {"Cäsar", "beyza", "uenal"};
