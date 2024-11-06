@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class stringManipulation {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Bitte geben Sie eine Zeichenkette ein:");
+        System.out.println("eine Zeichenkette eingeben:");
         String S = in.nextLine();
         char[] data = S.toCharArray();
 
