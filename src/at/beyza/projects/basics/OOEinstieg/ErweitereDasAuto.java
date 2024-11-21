@@ -10,7 +10,7 @@ public class ErweitereDasAuto {
     public void turboBoost() {
         if (fuelLevel > 0.1 * tankVolume) {
             System.out.println("SuperBoostMode");
-        } else {
+        } else
             System.out.println("Not enough fuel to go to Superboost");
         }
     }
