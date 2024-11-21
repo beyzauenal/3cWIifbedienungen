@@ -1,6 +1,6 @@
 package at.beyza.projects.basics.OOEinstieg;
 
-public class ErsteObjekt02 {
+public class ErsteObjekt {
     public static void main(String[] args) {
         int a = 7;
 
