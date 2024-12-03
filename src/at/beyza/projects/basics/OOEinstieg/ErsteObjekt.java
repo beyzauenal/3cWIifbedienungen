@@ -1,23 +1,19 @@
-package at.beyza.projects.basics.OOEinstieg;
+package at.beyza.projects.basics.OO;
 
 public class ErsteObjekt {
     public static void main(String[] args) {
-        int a = 7;
+        // Wir bauen das erste Objekt: Ein Auto!
+        // Ein Auto hat Eigenschaften (Farbe, Spritverbrauch, Seriennummer) und Fähigkeiten (fahren, bremsen).
 
-        Car c1 = new Car();
-        c1.brand = "Audi";
-        c1.fuelConsumption = 7;
-        c1.serialNumber = "A1234";
-        c1.fuelAmount = 70;
+        Cars c1 = new Cars();
+        c1.carcolor = "grey";
+        c1.carSpritverbrauch = 8;
+        c1.carserialNumber = "BEZAUI";
+        c1.fuelAmount = 80;
 
-        Car c2 = new Car();
-        c2.brand = "Mercedes";
-        c2.fuelConsumption = 6;
-        c2.serialNumber = "M1234";
-        c2.fuelAmount = 20;
-
-        System.out.println(c2.fuelAmount);
-        c2.drive();
-        System.out.println(c2.fuelAmount);
+        c1.dobreak();
+        c1.turboBoost();
+        c1.amountOfRepetitions(3);
+        c1.getRemainingRange();
     }
 }
