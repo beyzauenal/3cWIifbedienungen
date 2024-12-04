@@ -8,6 +8,14 @@ public class Cars {
     public String carserialNumber;
     public int fuelAmount;
 
+    public Cars(int fc, String b, String s, int fa) {
+        this.carSpritverbrauch = fc;
+        this.carcolor = b;
+        this.carserialNumber = s;
+        this.fuelAmount = fa;
+
+}
+
     // Methode zum Fahren
     public void drive() {
         this.fuelAmount = this.fuelAmount - carSpritverbrauch;
