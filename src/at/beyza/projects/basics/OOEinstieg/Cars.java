@@ -1,20 +1,20 @@
 package at.beyza.projects.basics.OO;
 
-
 public class Cars {
     // Instanz/Gedächtnisvariablen
-    public int carSpritverbrauch;
-    public String carcolor;
-    public String carserialNumber;
-    public int fuelAmount;
+    private int carSpritverbrauch;
+    private String carcolor;
+    private String carserialNumber;
+    private int fuelAmount;  // fuelAmount als int deklariert
+    private String brand;
 
+    // Konstruktor
     public Cars(int fc, String b, String s, int fa) {
         this.carSpritverbrauch = fc;
         this.carcolor = b;
         this.carserialNumber = s;
         this.fuelAmount = fa;
-
-}
+    }
 
     // Methode zum Fahren
     public void drive() {
@@ -43,9 +43,25 @@ public class Cars {
         }
     }
 
-    // Methode, um die verbleibende Reichweite zu berechnen
-    public void getRemainingRange() {
-        int range = fuelAmount / carSpritverbrauch;
-        System.out.println("Remaining range: " + range + " kilometers");
+    // Getter-Methoden
+    public int getCarSpritverbrauch() {
+        return carSpritverbrauch;
+    }
+
+    public String getCarcolor() {
+        return carcolor;
+    }
+
+    public String getCarserialNumber() {
+        return carserialNumber;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public String getBrand() {
+        return brand;
     }
 }
+

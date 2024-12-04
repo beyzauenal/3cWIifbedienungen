@@ -13,8 +13,7 @@ public class ErsteObjekt {
         c1.getRemainingRange();
 
         Cars c2 = new Cars(17, "open", "1234", 50);
-        System.out.println(c2.carserialNumber);
-
+        System.out.println(c2.getCarserialNumber());  // Verwende den Getter für carserialNumber
 
     }
 }
