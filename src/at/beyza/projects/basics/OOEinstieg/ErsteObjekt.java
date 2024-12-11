@@ -11,7 +11,7 @@ public class ErsteObjekt {
         c1.amountOfRepetitions(3);
         c1.getRemainingRange();
 
-        // Erstellen eines weiteren Car-Objekts
+        // Erstellen ein weiteres Car-Objekts
         Cars c2 = new Cars(17, "red", "1234", 50);
      m   System.out.println("Serial Number of car 2: " + c2.getCarserialNumber()); // Ausgabe der Seriennummer
     }
