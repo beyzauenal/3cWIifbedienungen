@@ -1,6 +1,7 @@
 package at.beyza.projects.basics.ooEinstieg;
 
 public class Cars {
+    private engine engine;
     private final int fuelUsage;           // Verbrauch pro Einheit
     private final String carColor;         // Farbe des Autos
     private final String carSerialNumber;  // Seriennummer
@@ -9,12 +10,13 @@ public class Cars {
     private int fuelAmount;                // Aktueller Kraftstoff
     private int amountOfRepetitions;       // Anzahl der Wiederholungen
 
-    public Cars(int carConsumption, String carColor, String carSerialNumber, int fuelAmount) {
-        this.fuelUsage = carConsumption;
+    public Cars(engine engine, String carColor, String carSerialNumber, int fuelAmount) {
+        this.engine = engine;
+        this.fuelUsage = engine,horsePower;
         this.carColor = carColor;
         this.carSerialNumber = carSerialNumber;
         this.fuelAmount = fuelAmount;
-        this.amountOfRepetitions = 0; // Wiederholungen
+        this.amountOfRepetitions = 0; // Wiederholung
         this.remainingRange = calculateRemainingRange(); // Berechnung d. Reichweite
     }
 
@@ -51,6 +53,14 @@ public class Cars {
     public void setFuelAmount(int fuelAmount) {
         this.fuelAmount = Math.min(fuelAmount, 100);
         this.remainingRange = calculateRemainingRange(); // Berechnung nach Kraftstoffs
+    }
+
+    public engine getEnine() {
+        return engine;
+    }
+
+    public void setEnine(engine enine) {
+        this.engine = enine;
     }
 
     public String getCarColor() {

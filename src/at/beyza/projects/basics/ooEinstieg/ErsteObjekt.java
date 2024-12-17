@@ -2,7 +2,11 @@ package at.beyza.projects.basics.ooEinstieg;
 
 public class ErsteObjekt {
     public static void main(String[] args) {
-        Cars c1 = new Cars(8, "grey", "BEZAUI", 80);
+
+        engine e1 = new engine(140, engine.TYPE.DIESEL);
+
+       /*
+       Cars c1 = new Cars(8, "grey", "BEZAUI", 80);
         c1.setFuelAmount(80);
         System.out.println("Kraftstoffstand c1: " + c1.getFuelAmount());
 
@@ -16,5 +20,7 @@ public class ErsteObjekt {
         System.out.println("Seriennummer von c2: " + c2.getCarSerialNumber());
         c2.drive();
         System.out.println("Kraftstoffstand c2 nach Fahrt: " + c2.getFuelAmount());
+
+        */
     }
 }
