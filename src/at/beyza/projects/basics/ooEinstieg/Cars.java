@@ -6,7 +6,6 @@ public class Cars {
     private final String carColor;         // Farbe des Autos
     private final String carSerialNumber;  // Seriennummer
     private int remainingRange;            // Verbleibende Reichweite
-
     private int fuelAmount;                // Aktueller Kraftstoff
     private int amountOfRepetitions;       // Anzahl der Wiederholungen
 
@@ -20,10 +19,14 @@ public class Cars {
         this.remainingRange = calculateRemainingRange(); // Berechnung d. Reichweite
     }
 
-    public void drive() {
+
+    void drive(int speed) {
         if (fuelAmount > 0) {
-            fuelAmount -= fuelUsage;
+            fuelAmount -= fuelUsage; // Kraftstoff verbrauchen
             this.remainingRange = calculateRemainingRange(); // verbleibende Reichweite neu berechnen
+            System.out.println("Das Auto fährt mit " + speed + " km/h.");
+        } else {
+            System.out.println("Nicht genug Kraftstoff!");
         }
     }
 
