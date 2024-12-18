@@ -10,9 +10,9 @@ public class Cars {
     private int fuelAmount;                // Aktueller Kraftstoff
     private int amountOfRepetitions;       // Anzahl der Wiederholungen
 
-    public Cars(engine engine, String carColor, String carSerialNumber, int fuelAmount) {
+    public Cars(engine engine, String carColor, String carSerialNumber, int fuelAmount, int fuelUsage) {
         this.engine = engine;
-        this.fuelUsage = engine,horsePower;
+        this.fuelUsage = fuelUsage;
         this.carColor = carColor;
         this.carSerialNumber = carSerialNumber;
         this.fuelAmount = fuelAmount;
