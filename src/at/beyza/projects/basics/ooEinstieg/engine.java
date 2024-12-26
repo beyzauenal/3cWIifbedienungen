@@ -11,15 +11,12 @@ public class engine {
         this.type = type;
     }
 
-    /*
-                Amount should be between 1 and 100
-         */
-    public void drive(int amount) {
-        if (amount < 1 || amount > 100) {
-            System.out.println("Invalid amount. It must be between 1 and 100.");
+    public void drive(int speed) {
+        if (speed < 1 || speed > 100) {
+            System.out.println("Invalid speed. It must be between 1 and 100.");
             return;
         }
-        System.out.println("The motor is running with " + amount);
+        System.out.println("The engine is running at " + speed + " km/h.");
     }
 
     public TYPE getType() {
@@ -28,5 +25,13 @@ public class engine {
 
     public int getHorsePower() {
         return horsePower;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public void setType(TYPE type) {
+        this.type = type;
     }
 }

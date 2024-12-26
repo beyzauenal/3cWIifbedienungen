@@ -1,7 +1,11 @@
 package at.beyza.projects.basics.ooEinstieg;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cars {
     private engine engine;
+    private List<RearMirror> mirrors;
     private final int fuelUsage;           // Verbrauch pro Einheit
     private final String carColor;         // Farbe des Autos
     private final String carSerialNumber;  // Seriennummer
@@ -16,9 +20,31 @@ public class Cars {
         this.carSerialNumber = carSerialNumber;
         this.fuelAmount = fuelAmount;
         this.amountOfRepetitions = 0; // Wiederholung
-        this.remainingRange = calculateRemainingRange(); // Berechnung d. Reichweite
+        this.remainingRange = calculateRemainingRange(); // Berechnung der Reichweite
+        this.mirrors = new ArrayList<>();
     }
 
+    // Getter und Setter für Engine
+    public engine getengine() {
+        return engine;
+    }
+
+    public void setEngine(engine engine) {
+        this.engine = engine;
+    }
+
+    // Getter für die Horsepower des Motors
+    public int getHorsePower() {
+        return engine.getHorsePower(); // Greift auf den Wert von horsePower in der engine-Klasse zu
+    }
+
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
 
     void drive(int speed) {
         if (fuelAmount > 0) {
@@ -56,14 +82,6 @@ public class Cars {
     public void setFuelAmount(int fuelAmount) {
         this.fuelAmount = Math.min(fuelAmount, 100);
         this.remainingRange = calculateRemainingRange(); // Berechnung nach Kraftstoffs
-    }
-
-    public engine getEnine() {
-        return engine;
-    }
-
-    public void setEnine(engine enine) {
-        this.engine = enine;
     }
 
     public String getCarColor() {
