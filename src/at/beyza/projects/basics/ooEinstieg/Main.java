@@ -8,14 +8,28 @@ public class Main {
         RearMirror r1 = new RearMirror(100, 0);
         RearMirror r2 = new RearMirror(90, 40);
 
+        //Reifen erstellen
+        Reifen reifen1 = new Reifen(17, "Sommer");
+        Reifen reifen2 = new Reifen(17, "Sommer");
+        Reifen reifen3 = new Reifen(17, "Sommer");
+        Reifen reifen4 = new Reifen(17, "Sommer");
+
         // Konstruktor der Cars-Klasse erfordert mehr Parameter
         Cars c1 = new Cars(e1, "red", "123ABC", 50, 5); // Beispielwerte für carSerialNumber und fuelAmount
         c1.addMirror(r1);
         c1.addMirror(r2);
 
+        c1.addReifen(reifen1);
+        c1.addReifen(reifen2);
+        c1.addReifen(reifen3);
+        c1.addReifen(reifen4);
+
         // Ausgabe der Position des ersten Rückspiegels und der PS des Motors
         System.out.println(c1.getMirrors().get(0).getPosition());
         System.out.println(c1.getengine().getHorsePower());
+        System.out.println("Das Auto hat " + c1.getMirrors().size() + " Rückspiegel.");
+        System.out.println("Das Auto hat " + c1.getReifen().size() + " Reifen.");
+
 
         /*
         // Auskommentierter Code muss überprüft werden, da die Methoden wie doBreak(), turboBoost() und andere fehlen
