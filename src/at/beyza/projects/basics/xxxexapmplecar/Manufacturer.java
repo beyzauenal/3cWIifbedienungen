@@ -1,5 +1,6 @@
 package at.beyza.projects.basics.xxxexapmplecar;
 
+
 public class Manufacturer {
     private String name;
     private String country;

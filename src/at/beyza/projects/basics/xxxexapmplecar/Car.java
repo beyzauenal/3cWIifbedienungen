@@ -1,5 +1,6 @@
 package at.beyza.projects.basics.xxxexapmplecar;
 
+
 public class Car {
     private String color;
     private double maxSpeed;
