@@ -17,8 +17,10 @@ public class Battery {
         System.out.println("Verbraucher angeschlossen");
     }
 
+
     // Gibt eine Nachricht aus, wenn der Verbraucher ausgeschaltet wird
     public void turnOff() {
         System.out.println("Kein Verbraucher angeschlossen");
     }
 }
+

@@ -6,7 +6,9 @@ public class Main2 {
 
         System.out.println("Ladestatus: " + remoteControl.getStatus() + "%");
 
-        remoteControl.turnOn(); // Verbraucher wird angeschlossen
+        remoteControl.turnOn(); // Verbraucher wird
+
+        // angeschlossen
         System.out.println("Ladestatus nach Einschalten: " + remoteControl.getStatus() + "%");
 
         remoteControl.turnOff(); // Verbraucher wird ausgeschaltet
