@@ -5,13 +5,13 @@ public class Manufacturer {
     private String country;
     private double discountPercentage;
 
-    //Hersteller
+    // Hersteller
     public Manufacturer(String name, String country, double discountPercentage) {
         this.name = name;
         this.country = country;
         this.discountPercentage = discountPercentage;
     }
-//Rabattprozentsatz
+    // Rabattprozentsatz
     public double getDiscountPercentage() {
         return discountPercentage;
     }
@@ -24,7 +24,7 @@ public class Manufacturer {
         return country;
     }
 
-    @Override
+    // toString Methode ohne @Override
     public String toString() {
         return "Manufacturer{" +
                 "name='" + name + '\'' +

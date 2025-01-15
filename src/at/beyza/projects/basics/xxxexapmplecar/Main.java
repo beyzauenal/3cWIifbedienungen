@@ -10,6 +10,7 @@ public class Main {
         System.out.println(vwCar);
         System.out.println("Verbrauch nach 60,000 km: " + vwCar.calculateConsumption(60000) + " L/100km\n");
 
+
         Manufacturer beyzaManufacturer = new Manufacturer("Beyza", "Austria", 15);
         Engine petrolEngine = new Engine("Petrol", 200);
         Car beyzaCar = new Car("Blue", 240, 35000, 7.0, beyzaManufacturer, petrolEngine);

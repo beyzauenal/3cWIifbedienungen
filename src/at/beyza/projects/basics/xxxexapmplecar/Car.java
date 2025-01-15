@@ -28,7 +28,7 @@ public class Car {
         return baseConsumption * 1.098;
     }
 
-    @Override
+    // toString Methode ohne @Override
     public String toString() {
         return "Car{" +
                 "color='" + color + '\'' +
