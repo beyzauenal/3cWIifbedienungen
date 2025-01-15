@@ -1,5 +1,6 @@
 package at.beyza.projects.basics.xxxexamplecar2;
 
+
 public class LightElement {
     private String name;
     private String color;

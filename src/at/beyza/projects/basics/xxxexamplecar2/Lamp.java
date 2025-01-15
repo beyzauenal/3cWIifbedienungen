@@ -3,6 +3,7 @@ package at.beyza.projects.basics.xxxexamplecar2;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Lamp {
     private List<LightElement> lightElements;
 

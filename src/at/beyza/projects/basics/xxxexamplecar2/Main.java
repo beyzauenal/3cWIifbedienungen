@@ -1,5 +1,6 @@
 package at.beyza.projects.basics.xxxexamplecar2;
 
+
 public class Main {
     public static void main(String[] args) {
         LightElement light1 = new LightElement("Light1", "Red", 10);
