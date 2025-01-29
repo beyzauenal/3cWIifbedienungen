@@ -3,9 +3,9 @@ package at.beyza.projects.basics.ooEinstieg;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cars {
+public class Car {
     private List<Reifen> reifen;  // Liste für Reifen
-    private engine engine;
+    private engine engine;  // `engine` bleibt kleingeschrieben
     private List<RearMirror> mirrors;
     private final int fuelUsage;           // Verbrauch pro Einheit
     private final String carColor;         // Farbe des Autos
@@ -14,7 +14,7 @@ public class Cars {
     private int fuelAmount;                // Aktueller Kraftstoff
     private int amountOfRepetitions;       // Anzahl der Wiederholungen
 
-    public Cars(engine engine, String carColor, String carSerialNumber, int fuelAmount, int fuelUsage) {
+    public Car(engine engine, String carColor, String carSerialNumber, int fuelAmount, int fuelUsage) {
         this.engine = engine;
         this.fuelUsage = fuelUsage;
         this.carColor = carColor;
@@ -27,11 +27,11 @@ public class Cars {
     }
 
     // Getter und Setter für Engine
-    public engine getengine() {
+    public engine getEngine() {  // `engine` bleibt klein
         return engine;
     }
 
-    public void setEngine(engine engine) {
+    public void setEngine(engine engine) {  // `engine` bleibt klein
         this.engine = engine;
     }
 
@@ -40,7 +40,7 @@ public class Cars {
         return engine.getHorsePower(); // Greift auf den Wert von horsePower in der engine-Klasse zu
     }
 
-    public void addMirror(RearMirror rearMirror){
+    public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
 
@@ -48,7 +48,7 @@ public class Cars {
         return mirrors;
     }
 
-    //Reifen Methode
+    // Reifen Methode
     public void addReifen(Reifen reifen) {
         if (this.reifen.size() < 4) {  // Ein Auto kann nur 4 Reifen haben
             this.reifen.add(reifen);
@@ -61,8 +61,7 @@ public class Cars {
         return reifen;
     }
 
-
-    void drive(int speed) {
+    public void drive(int speed) {
         if (fuelAmount > 0) {
             fuelAmount -= fuelUsage; // Kraftstoff verbrauchen
             this.remainingRange = calculateRemainingRange(); // verbleibende Reichweite neu berechnen
@@ -97,7 +96,7 @@ public class Cars {
 
     public void setFuelAmount(int fuelAmount) {
         this.fuelAmount = Math.min(fuelAmount, 100);
-        this.remainingRange = calculateRemainingRange(); // Berechnung nach Kraftstoffs
+        this.remainingRange = calculateRemainingRange(); // Berechnung nach Kraftstoff
     }
 
     public String getCarColor() {
@@ -116,6 +115,6 @@ public class Cars {
         if (fuelUsage > 0) {
             return fuelAmount / fuelUsage;
         }
-        return 0; // Verhindert (/) durch (0)
+        return 0; // Verhindert Division durch 0
     }
 }

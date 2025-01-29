@@ -12,6 +12,7 @@ public class Manufacturer {
         this.country = country;
         this.discountPercentage = discountPercentage;
     }
+
     // Rabattprozentsatz
     public double getDiscountPercentage() {
         return discountPercentage;
@@ -25,7 +26,7 @@ public class Manufacturer {
         return country;
     }
 
-    // toString Methode ohne @Override
+
     public String toString() {
         return "Manufacturer{" +
                 "name='" + name + '\'' +
