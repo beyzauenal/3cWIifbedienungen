@@ -33,5 +33,7 @@ public class Main {
         // Testen Truck
         Truck t1 = new Truck(e1, "Mercedes", "Green", "Trailer1");
         System.out.println("Colour: " + t1.getCarColor() + ", Trailer: " + t1.getTrailer());
+
     }
+
 }

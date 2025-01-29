@@ -14,5 +14,6 @@ public class Truck extends Car {
 
     public void setTrailer(String trailer) {
         this.trailer = trailer;
+
     }
 }
