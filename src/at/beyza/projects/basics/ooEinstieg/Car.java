@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
-    private List<Reifen> reifen;  // Liste für Reifen
-    private engine engine;  // `engine` bleibt kleingeschrieben
+    private List<Reifen> reifen;
+    private engine engine;
     private List<RearMirror> mirrors;
-    private final int fuelUsage;           // Verbrauch pro Einheit
-    private final String carColor;         // Farbe des Autos
-    private final String carSerialNumber;  // Seriennummer
-    private int remainingRange;            // Verbleibende Reichweite
-    private int fuelAmount;                // Aktueller Kraftstoff
-    private int amountOfRepetitions;       // Anzahl der Wiederholungen
+    private final int fuelUsage;
+    private final String carColor;
+    private final String carSerialNumber;
+    private int remainingRange;
+    private int fuelAmount;
+    private int amountOfRepetitions;
 
     public Car(engine engine, String carColor, String carSerialNumber, int fuelAmount, int fuelUsage) {
         this.engine = engine;
@@ -45,7 +45,9 @@ public class Car {
         System.out.println("I'm driving");
     }
 
-    public void break(){
+
+
+    public void stop(){
         System.out.println("I'm breaking......car");
     }
 
@@ -98,7 +100,7 @@ public class Car {
     public void amountOfRepetitions(int repetition) {
         this.amountOfRepetitions = repetition; // Wiederholungen
         for (int i = 0; i < repetition; i++) {
-            System.out.println("Tutututut");
+            System.out.println("Tututututuuuuu");
         }
     }
 
@@ -114,6 +116,7 @@ public class Car {
     public String getCarColor() {
         return carColor;
     }
+
 
     public String getCarSerialNumber() {
         return carSerialNumber;

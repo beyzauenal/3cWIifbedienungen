@@ -4,7 +4,7 @@ public class Truck extends Car {
     private String trailer;
 
     public Truck(engine engine, String brand, String colour, String trailer) {
-        super(engine, brand, colour, 50, 5); // Beispielwerte für carSerialNumber und fuelAmount
+        super(engine, brand, colour, 50, 5);
         this.trailer = trailer;
     }
 
@@ -18,7 +18,9 @@ public class Truck extends Car {
     }
 
     @Override
-    public void drive("I'm driving the Truck; consuption is high"){
-        //super.drive();
+    public void drive(int speed) {
+        System.out.println("I am driving the truck = consuption is high");
+        // super.drive();
     }
+
 }
