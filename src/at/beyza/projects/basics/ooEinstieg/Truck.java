@@ -21,6 +21,7 @@ public class Truck extends Car {
     public void drive(int speed) {
         System.out.println("I am driving the truck = consuption is high");
         // super.drive();
+
     }
 
 }

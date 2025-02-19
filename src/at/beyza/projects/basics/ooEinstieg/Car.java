@@ -53,7 +53,6 @@ public class Car {
 
 
 
-
     public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
