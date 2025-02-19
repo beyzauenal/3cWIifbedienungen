@@ -16,4 +16,9 @@ public class Truck extends Car {
         this.trailer = trailer;
 
     }
+
+    @Override
+    public void drive("I'm driving the Truck; consuption is high"){
+        //super.drive();
+    }
 }

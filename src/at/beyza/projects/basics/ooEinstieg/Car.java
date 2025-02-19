@@ -40,6 +40,18 @@ public class Car {
         return engine.getHorsePower(); // Greift auf den Wert von horsePower in der engine-Klasse zu
     }
 
+    //Methode drive für Truck
+    public void drive(){
+        System.out.println("I'm driving");
+    }
+
+    public void break(){
+        System.out.println("I'm breaking......car");
+    }
+
+
+
+
     public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
