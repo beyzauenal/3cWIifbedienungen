@@ -1,4 +1,4 @@
-package at.beyza.projects.basics.ooEinstieg.Rechner;
+package at.beyza.projects.basics.ooEinstieg.Rechner_14;
 
 public class Main {
     public static void main(String[] args) {

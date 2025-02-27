@@ -1,4 +1,4 @@
-package at.beyza.projects.basics.ooEinstieg.Rechner;
+package at.beyza.projects.basics.ooEinstieg.Rechner_14;
 
 public class RootCalculator extends Calculator {
     public double squareRoot(int a) {
