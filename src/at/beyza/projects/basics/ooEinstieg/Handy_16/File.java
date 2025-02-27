@@ -15,5 +15,6 @@ public class File {
 
     public int getSize() {
         return size;
+
     }
 }

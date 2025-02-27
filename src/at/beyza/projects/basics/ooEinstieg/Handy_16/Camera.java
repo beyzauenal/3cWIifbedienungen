@@ -22,6 +22,7 @@ public class Camera {
                 return 2;
             default:
                 return 0;
+
         }
     }
 }

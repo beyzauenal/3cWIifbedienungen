@@ -10,6 +10,7 @@ public class Main {
         if (phone.login("password")) {
             phone.takePhoto();
             phone.displayFiles();
+
         }
     }
 }

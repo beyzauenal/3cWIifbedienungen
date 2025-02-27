@@ -31,5 +31,6 @@ public class Phone {
 
     public boolean login(String password) {
         return password.equals(this.login);
+
     }
 }
