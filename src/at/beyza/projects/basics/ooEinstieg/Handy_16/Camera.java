@@ -12,6 +12,7 @@ public class Camera {
         return new File("Photo", fileSize);
     }
 
+
     public int getFileSize() {
         switch (resolution) {
             case "high":

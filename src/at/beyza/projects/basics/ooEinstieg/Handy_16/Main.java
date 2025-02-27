@@ -7,6 +7,7 @@ public class Main {
         SDCard sdCard = new SDCard(50);
         Phone phone = new Phone(camera, simCard, sdCard, "password");
 
+
         if (phone.login("password")) {
             phone.takePhoto();
             phone.displayFiles();

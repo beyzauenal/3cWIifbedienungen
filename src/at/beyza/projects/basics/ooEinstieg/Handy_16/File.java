@@ -13,6 +13,7 @@ public class File {
         return name;
     }
 
+
     public int getSize() {
         return size;
 

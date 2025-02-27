@@ -14,6 +14,7 @@ public class SDCard {
         this.files = new ArrayList<>();
     }
 
+
     public boolean hasSpace(int fileSize) {
         return (usedSpace + fileSize) <= totalSpace;
     }
