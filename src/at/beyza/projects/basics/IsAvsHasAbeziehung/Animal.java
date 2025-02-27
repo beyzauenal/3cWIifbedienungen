@@ -1,20 +1,20 @@
 package at.beyza.projects.basics.IsAvsHasAbeziehung;
 
 public class Animal {
-    private int weigth;
+    private int weight;
     private int height;
 
-    public Animal(int height, int weigth) {
+    public Animal(int height, int weight) {
         this.height = height;
-        this.weigth = weigth;
+        this.weight = weight;
     }
 
-    public int getWeigth() {
-        return weigth;
+    public int getWeight() {
+        return weight;
     }
 
-    public void setWeigth(int weigth) {
-        this.weigth = weigth;
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     public int getHeight() {
