@@ -2,19 +2,21 @@ package at.beyza.projects.basics.ooEinstieg.Kamera_17;
 
 public class Phone {
     private String brand;
-    private SimCard simCard;
-    private PhoneFile phoneFile;
+    private SDCard sdCard;
 
     public Phone(String brand) {
         this.brand = brand;
     }
 
-
-    public void insertSimCard(SimCard simCard) {
-        this.simCard = simCard;
+    public void insertSDCard(SDCard sdCard) {
+        this.sdCard = sdCard;
     }
 
-    public void insertPhoneFile(PhoneFile phoneFile) {
-        this.phoneFile = phoneFile;
+    public void saveFile(File file) {
+        if (sdCard != null) {
+            sdCard.storeFile(file);
+        } else {
+            System.out.println("Keine SD-Karte im Telefon.");
+        }
     }
 }
